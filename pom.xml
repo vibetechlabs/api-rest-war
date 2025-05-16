@@ -6,6 +6,7 @@
     <artifactId>api-rest-war</artifactId>
     <version>1.0.0</version>
     <packaging>war</packaging>
+    <name>api-rest-war</name>
 
     <properties>
         <java.version>11</java.version>
@@ -64,12 +65,18 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>			
+			<!--
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <finalName>api-rest-war</finalName>
                     <mainClass>com.exemplo.ApiRestApplication</mainClass>
                     <layout>WAR</layout>
                 </configuration>
             </plugin>
+            -->
         </plugins>
     </build>
 </project>
