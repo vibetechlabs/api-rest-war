@@ -14,6 +14,19 @@ services:
     networks:
       - spring-mysql-net
 
+  mysql-stage:
+    image: mysql:8.0
+    container_name: mysql-spring-stage
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: springdb
+    ports:
+      - "4306:3306"
+    volumes:
+      - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - spring-mysql-net      
+
   wildfly:
     build:
       context: .
@@ -24,6 +37,8 @@ services:
       - mysql
     networks:
       - spring-mysql-net
+    environment:
+      - SpringDS_URL=jdbc:mysql://mysql:3306/springdb?allowPublicKeyRetrieval=true&useSSL=false
 
 networks:
   spring-mysql-net:
