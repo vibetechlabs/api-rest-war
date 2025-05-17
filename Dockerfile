@@ -1,6 +1,10 @@
 FROM jboss/wildfly:23.0.2.Final
 
-COPY wildfly/mysql-connector-java-8.0.30.jar /opt/jboss/wildfly/modules/com/mysql/main/
+# Copiar o driver MySQL
+ADD https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.30/mysql-connector-java-8.0.30.jar /opt/jboss/wildfly/standalone/deployments/
+
+
+#COPY wildfly/mysql-connector-java-8.0.30.jar /opt/jboss/wildfly/modules/com/mysql/main/
 COPY wildfly/module.xml /opt/jboss/wildfly/modules/com/mysql/main/
 COPY wildfly/standalone.xml /opt/jboss/wildfly/standalone/configuration/
 
