@@ -1,5 +1,17 @@
+Cenário de cada branch
+
+main: wildfly acessando banco meysql
+containerized-manual: contaner wildfly acessando banco de dados
+containerized-env: container wildfly acessando banco de dados podendo alterar a url de conexao
+
+
 
 Standalone
+
+link download wildfly 23
+configurar standalone.xml com o datasource referenciado pela aplicacao
+
+#bash
 
 $pwd | PWD=
 
@@ -36,6 +48,9 @@ $docker run --rm --name wildfly-spring-standalone \
 -p 8180:8080 \
 --network spring-mysql-net \
 api-rest-war-wildfly 
+
+
+$docker-compose up --build
 
 
 
