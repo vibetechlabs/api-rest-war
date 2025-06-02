@@ -1,14 +1,15 @@
 Cenário de cada branch
 
-main: wildfly acessando banco meysql 
+main: wildfly acessando banco mysql 
 containerized-manual: contaner wildfly acessando banco de dados 
-containerized-env: container wildfly acessando banco de dados podendo alterar a url de conexao
+containerized-env: container wildfly acessando banco de dados podendo alterar a url de conexao 
 
 
 
 Standalone
 
-link download wildfly 23: [https://download.jboss.org/wildfly/23.0.0.Final/wildfly-23.0.0.Final.zip](https://download.jboss.org/wildfly/23.0.2.Final/wildfly-23.0.2.Final.zip)
+link download wildfly 23: [https://download.jboss.org/wildfly/23.0.2.Final/wildfly-23.0.2.Final.zip](https://download.jboss.org/wildfly/23.0.2.Final/wildfly-23.0.2.Final.zip) 
+
 configurar standalone.xml com o datasource referenciado pela aplicacao
 
 #bash
