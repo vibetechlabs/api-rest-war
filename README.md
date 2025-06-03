@@ -1,11 +1,11 @@
+#Main 
+##Standalone 
 
-Standalone
+$pwd | PWD=
 
-pwd | PWD=
+$docker network create spring-mysql-net
 
-docker network create spring-mysql-net
-
-docker run -d --name mysql-spring --rm \
+$docker run -d --name mysql-spring --rm \
   -e MYSQL_ROOT_PASSWORD=root \
   -e MYSQL_DATABASE=springdb \
   -p 3306:3306 \
@@ -14,7 +14,7 @@ docker run -d --name mysql-spring --rm \
   mysql:8.0
 
 
-docker run -d --name mysql-spring-stage --rm \
+$docker run -d --name mysql-spring-stage --rm \
   -e MYSQL_ROOT_PASSWORD=root \
   -e MYSQL_DATABASE=springdb \
   -p 4306:3306 \
@@ -23,7 +23,7 @@ docker run -d --name mysql-spring-stage --rm \
   mysql:8.0  
 
 
-docker run --rm --name wildfly-spring-standalone \
+$docker run --rm --name wildfly-spring-standalone \
 -e SpringDS_URL="jdbc:mysql://mysql-spring:3306/springdb?allowPublicKeyRetrieval=true&useSSL=false" \
 -p 8180:8080 \
 --network spring-mysql-net \
@@ -31,16 +31,16 @@ api-rest-war-wildfly
 
 
 
-docker run --rm --name wildfly-spring-standalone \
+$docker run --rm --name wildfly-spring-standalone \
 -e SpringDS_URL="jdbc:mysql://mysql-spring-stage:3306/springdb?allowPublicKeyRetrieval=true&useSSL=false" \
 -p 8180:8080 \
 --network spring-mysql-net \
 api-rest-war-wildfly 
 
 
-Utilizando Docker Compose
+##Utilizando Docker Compose 
 
-docker-compose up --build
+$docker-compose up --build
 
 
 
