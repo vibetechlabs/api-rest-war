@@ -1,5 +1,5 @@
-#Main 
-##Standalone 
+# Main 
+## Standalone 
 
 $pwd | PWD=
 
@@ -38,7 +38,7 @@ $docker run --rm --name wildfly-spring-standalone \
 api-rest-war-wildfly 
 
 
-##Utilizando Docker Compose 
+## Utilizando Docker Compose 
 
 $docker-compose up --build
 
