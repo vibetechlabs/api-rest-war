@@ -1,6 +1,7 @@
 # Main 
 ## Standalone 
 
+```console
 $pwd | PWD=
 
 $docker network create spring-mysql-net
@@ -36,12 +37,12 @@ $docker run --rm --name wildfly-spring-standalone \
 -p 8180:8080 \
 --network spring-mysql-net \
 api-rest-war-wildfly 
-
+```
 
 ## Utilizando Docker Compose 
-
+```console
 $docker-compose up --build
-
+```
 
 
 
