@@ -1,19 +1,15 @@
-Cenário de cada branch
 
-main: wildfly acessando banco mysql 
-containerized-manual: contaner wildfly acessando banco de dados 
-containerized-env: container wildfly acessando banco de dados podendo alterar a url de conexao 
+main: wildfly acessando banco mysql  
+containerized-manual: contaner wildfly acessando banco de dados  
+containerized-env: container wildfly acessando banco de dados podendo alterar a url de conexao  
 
+## Standalone
 
-
-Standalone
-
-link download wildfly 23: [https://download.jboss.org/wildfly/23.0.2.Final/wildfly-23.0.2.Final.zip](https://download.jboss.org/wildfly/23.0.2.Final/wildfly-23.0.2.Final.zip) 
+Download Wildfly 23: [https://download.jboss.org/wildfly/23.0.2.Final/wildfly-23.0.2.Final.zip](https://download.jboss.org/wildfly/23.0.2.Final/wildfly-23.0.2.Final.zip) 
 
 configurar standalone.xml com o datasource referenciado pela aplicacao
 
-#bash
-
+```bash
 $pwd | PWD=
 
 $docker network create spring-mysql-net
@@ -52,7 +48,7 @@ api-rest-war-wildfly
 
 
 $docker-compose up --build
-
+```
 
 
 
