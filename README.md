@@ -1,7 +1,10 @@
 # Main 
+wildfly acessando banco mysql  
+
+Download Wildfly 23: [https://download.jboss.org/wildfly/23.0.2.Final/wildfly-23.0.2.Final.zip](https://download.jboss.org/wildfly/23.0.2.Final/wildfly-23.0.2.Final.zip)  
 ## Standalone 
 
-```console
+```bash
 $pwd | PWD=
 
 $docker network create spring-mysql-net
@@ -43,7 +46,3 @@ api-rest-war-wildfly
 ```console
 $docker-compose up --build
 ```
-
-
-
-  
