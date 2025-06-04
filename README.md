@@ -1,7 +1,5 @@
-
-main: wildfly acessando banco mysql  
-containerized-manual: contaner wildfly acessando banco de dados  
-containerized-env: container wildfly acessando banco de dados podendo alterar a url de conexao  
+# containerized-env
+Contêiner wildfly acessando banco de dados podendo alterar a url de conexao  
 
 ## Standalone
 
