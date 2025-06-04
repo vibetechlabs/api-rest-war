@@ -1,6 +1,8 @@
+# containerized-manual
+Contêiner wildfly acessando banco de dados  
+## Standalone
 
-Standalone
-
+```bash
 pwd | PWD=
 
 docker network create spring-mysql-net
@@ -12,6 +14,5 @@ docker run --name mysql-spring --rm \
   -v $PWD/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql:Z \
   --network spring-mysql-net \
   mysql:8.0
-
-
+```
   
