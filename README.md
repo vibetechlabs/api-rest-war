@@ -1,9 +1,9 @@
 # containerized-env
 Contêiner wildfly acessando banco de dados podendo alterar a url de conexao  
 
-## Standalone
+Download Wildfly 23: [https://download.jboss.org/wildfly/23.0.2.Final/wildfly-23.0.2.Final.zip](https://download.jboss.org/wildfly/23.0.2.Final/wildfly-23.0.2.Final.zip)
 
-Download Wildfly 23: [https://download.jboss.org/wildfly/23.0.2.Final/wildfly-23.0.2.Final.zip](https://download.jboss.org/wildfly/23.0.2.Final/wildfly-23.0.2.Final.zip) 
+## Standalone 
 
 configurar standalone.xml com o datasource referenciado pela aplicacao
 
