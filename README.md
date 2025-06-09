@@ -1,5 +1,7 @@
 # containerized-manual
 Contêiner wildfly acessando banco de dados  
+
+Download Wildfly 23: [https://download.jboss.org/wildfly/23.0.2.Final/wildfly-23.0.2.Final.zip](https://download.jboss.org/wildfly/23.0.2.Final/wildfly-23.0.2.Final.zip)
 ## Standalone
 
 ```bash
