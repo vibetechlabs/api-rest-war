@@ -43,6 +43,6 @@ api-rest-war-wildfly
 ```
 
 ## Utilizando Docker Compose 
-```console
+```bash
 $docker-compose up --build
 ```
